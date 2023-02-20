@@ -12,9 +12,10 @@ const UncontrolledInputs = () => {
     console.log(name);
     // get all of them
     const newUser = Object.fromEntries(formData);
+    //{name:"sOhan",email:"chaudhuree@gmail.com",password:"secret"}
     // do something (post request, add to list, etc)
     console.log(newUser);
-    // Gotcha - re-render won't clear out the values
+    // re-render won't clear out the values
     setValue(value + 1);
     // reset values
     e.currentTarget.reset();
